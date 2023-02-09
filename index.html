@@ -26,7 +26,7 @@
                 <li>HTML</li>
             </ul>
         </section>
-        <section class="pl-container">
+        <section class="pl-container" title="pl-container">
             <h1 id="pl-id">Programming language</h1>
             <ul>
                 <li class="pgl">JavaScript</li>
@@ -35,7 +35,7 @@
             </ul>
         </section>
         <section class="places-container">
-            <h1 >Visited Places</h1>
+            <h1 id="visit-id">Visited Places</h1>
             <ul>
                 <li class="places">Jamalpur</li>
                 <li class="places">Mymonsingh</li>
@@ -81,6 +81,24 @@
             console.log(li.innerText);
             
         }
+        // Set attribute using ID
+        const title=document.getElementById('pl-id');
+        title.setAttribute('title','MouseEvent');
+        title.innerText="New Programming Language";
+        // ColorChange
+        title.style.color='blue';
+        title.style.textAlign='center';
+        title.style.backgroundColor='yellow';
+        //Set attribute using Class
+        const tClass=document.getElementsByClassName('places');
+        tClass.study.color='blue';
+        // inner HTML tag change
+        const inHTML=document.getElementById('place-id');
+        inHTML.innerText='Inner Programmainfg Language ';
+        //
+
+        
+        
     </script>
     
 </body>
