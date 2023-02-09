@@ -9,7 +9,7 @@
     <title>Tour of DOM</title>
     <style>
         li{
-            color: aqua;
+            color:magenta;
         }
     </style>
 </head>
@@ -18,12 +18,30 @@
         <h1>Welcome to my DOM</h1>
     </header>
     <main>
-        <h1>DOM DOM DOM</h1>
-        <ul>
-            <li>JavaScript</li>
-            <li>CSS</li>
-            <li>HTML</li>
-        </ul>
+        <section>
+            <h1>DOM DOM DOM</h1>
+            <ul>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="pl">Programming language</h1>
+            <ul>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>C</li>
+            </ul>
+        </section>
+        <section>
+            <h1 >Visited Places</h1>
+            <ul>
+                <li class="places">Jamalpur</li>
+                <li class="places">Mymonsingh</li>
+                <li class="places">Tangail</li>
+            </ul>
+        </section>
     </main>
     <!-- JS -->
     <script>
@@ -36,14 +54,20 @@
                 console.log(t,"Study");
             }
         }
-        console.log('Inner list');
-        const liCollection=document.getElementsByTagName('li');
-        for(const li of liCollection){
-            // console.log(li);
-            console.log(li.innerText);
+        // console.log('Inner list');
+        // const liCollection=document.getElementsByTagName('li');
+        // for(const li of liCollection){
+        //     // console.log(li);
+        //     console.log(li.innerText);
             
+        // }
+        console.log("Inner getElementsByClassName");
+        const liClass=document.getElementsByClassName('places');
+        for(const li of liClass)
+        {
+            console.log(li.innerText);
         }
     </script>
-    <script src="js/dom.js"></script>
+    
 </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM pratics</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DOM DOM DOM practice</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Main DOM</h1>
+            <ul>
+                <li>Linux</li>
+                <li>Windows</li>
+                <li>Macbook</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Programming language</h1>
+            <ul>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>C</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Visited Places</h1>
+            <ul>
+                <li>Jamalpur</li>
+                <li>Mymonsingh</li>
+                <li>Tangail</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        console.log("DOM HTML");
+        const liCollection=document.getElementsByTagName('li');
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+    </script>
+    <script src="js/dom.js"></script>
+</body>
+</html>
