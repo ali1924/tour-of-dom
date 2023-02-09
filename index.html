@@ -27,11 +27,11 @@
             </ul>
         </section>
         <section class="pl-container">
-            <h1 id="pl">Programming language</h1>
+            <h1 id="pl-id">Programming language</h1>
             <ul>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>C</li>
+                <li class="pgl">JavaScript</li>
+                <li class="pgl">C++</li>
+                <li class="pgl">C</li>
             </ul>
         </section>
         <section class="places-container">
@@ -55,36 +55,30 @@
             }
         }
         // Option-1 getElementsByTagName
-        console.log('Inner list');
-        const liCollection=document.getElementsByTagName('li');
-        for(const li of liCollection){
+        const allHeading=document.getElementsByTagName('h1');
+        for(const h1 of allHeading){
             // console.log(li);
-            console.log(li.innerText);
+            console.log(h1.innerText);
             
         }
         // Option-2 getElementById
-        console.log('Inner list');
-        const liId=document.getElementByID('h1');
-        for(const h1 of liId){
-            // console.log(li);
-            console.log(h1.innerText);
-            
-        }
+        const jsId=document.getElementById('pl-id');
+        jsId.innerText="P language By JS";
+
         // Option-3 getElementsByClassName
-         console.log('Inner list');
-        const liClass=document.getElementsByClassName('pl-container');
-        for(const h1 of liClass){
+        const plClass=document.getElementsByClassName('pl-container');
+        for(const pgl of plClass){
             // console.log(li);
-            console.log(h1.innerText);
+            console.log(pgl.innerText);
             
         }
         // Option-4 querySelectorAll
          // Option-5 querySelector
         console.log('Inner list');
-        const liQuery=document.querySelector('.pl-container');
-        for(const h1 of liQuery){
+        const jsQuery=document.querySelectorAll('.pl-container li');
+        for(const li of jsQuery){
             // console.log(li);
-            console.log(liQuery.innerText);
+            console.log(li.innerText);
             
         }
     </script>
