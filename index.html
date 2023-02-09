@@ -27,7 +27,22 @@
     </main>
     <!-- JS -->
     <script>
-        console.log("Ali")
+        console.log("Ali");
+        const student=
+        {
+            name:"AB",
+            id:123,
+            study: function(t){
+                console.log(t,"Study");
+            }
+        }
+        console.log('Inner list');
+        const liCollection=document.getElementsByTagName('li');
+        for(const li of liCollection){
+            // console.log(li);
+            console.log(li.innerText);
+            
+        }
     </script>
     <script src="js/dom.js"></script>
 </body>
